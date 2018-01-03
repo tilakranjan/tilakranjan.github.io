@@ -61,6 +61,16 @@ function startSlider(minV = 1000, maxV = 300000, minR = 1000, maxR = 5000000){
 }
 
 function appendOneWayResult(data){
+  var dest1 = ''
+  var arrt1 = ''
+  if(data.onwardflights.length > 0){
+    dest1 = data.onwardflights[0].destination
+    arrt1 = data.onwardflights[0].arrtime
+  }
+  else{
+    dest1 = data.destination
+    arrt1 = data.arrtime
+  }
   var theHtml =
   '<div class="searchResult">'
   +'<div class="searchDiv searchDepart">'
@@ -81,11 +91,11 @@ function appendOneWayResult(data){
   +'<div class="searchDiv searchArrival">'
 
   +'<p><span class="smallText">'
-  +getDate(data.onwardflights[data.onwardflights.length-1].arrdate)
+  +getDate((data.onwardflights.length > 0)?(data.onwardflights[0].arrdate):(data.arrdate))
   +'</span>'
-  +data.onwardflights[data.onwardflights.length-1].arrtime
+  +arrt1
   +'<span class="smallText">'
-  +data.onwardflights[data.onwardflights.length-1].destination
+  +dest1
   +'</span></p>'
   // +'<p>'+data.arrtime+'</p>'
   +'</div>'
@@ -109,6 +119,16 @@ function getDate(nDate){
 }
 
 function appendRoundTripResult(data){
+  var dest1 = ''
+  var arrt1 = ''
+  if(data.onwardflights.length > 0){
+    dest1 = data.onwardflights[0].destination
+    arrt1 = data.onwardflights[0].arrtime
+  }
+  else{
+    dest1 = data.destination
+    arrt1 = data.arrtime
+  }
   var theHtml =
   '<div class="searchResult">'
   +'<div class="searchDiv searchDepart">'
@@ -135,11 +155,11 @@ function appendRoundTripResult(data){
   +'</div>'
   +'<div class="searchDiv searchArrival">'
   +'<p><span class="smallText">'
-  +getDate(data.onwardflights[data.onwardflights.length-1].arrdate)
+  +getDate((data.onwardflights.length > 0)?(data.onwardflights[0].arrdate):(data.arrdate))
   +'</span>'
-  +data.onwardflights[data.onwardflights.length-1].arrtime
+  +arrt1
   +'<span class="smallText">'
-  +data.onwardflights[data.onwardflights.length-1].destination
+  +dest1
   +'</span></p>'
   +'<p><span class="smallText">'
   +getDate(data.returnfl[data.returnfl.length-1].arrdate)
@@ -151,7 +171,8 @@ function appendRoundTripResult(data){
   +'</div>'
   +'<div class="searchDiv searchAirline">'
   +'<p>'
-  +data.onwardflights[0].airline
+  // +data.onwardflights[0].airline
+  +data.airline
   +'</p>'
   +'<p>'
   +data.returnfl[data.returnfl.length-1].airline
