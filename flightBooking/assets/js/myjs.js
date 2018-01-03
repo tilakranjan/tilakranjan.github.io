@@ -264,7 +264,7 @@ function searchFlight(){
       "adults": $('.entry.value').text()
     },
     "headers": {
-      "Cache-Control": "no-cache",
+      // "Cache-Control": "no-cache",
     }
   }
 
