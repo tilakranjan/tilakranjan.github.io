@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flight Ticket Booking Application</title>
+	<link rel="stylesheet" href="assets/css/jquery-ui.css" />
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</head>
+<body>
+
+	<div id="ticketForm" class="main-agileinfo">
+		<h1 id="headingTitle">Form</h1>
+		<div class="formDiv">
+			<div class="formElements switch-holder">
+				<div class="switch-field">
+					<!-- <div class="switch-title">Is this awesome?</div> -->
+					<input class="" type="radio" id="switch_left" name="switch_2" value=2 checked/>
+					<label for="switch_left">Round Trip</label>
+					<input class="formVal" type="radio" id="switch_right" name="switch_2" value=1 />
+					<label for="switch_right">One Way</label>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="formElements from">
+				<h3>From</h3>
+				<input id="airport01" type="text" name="city" class="formVal portName city1" placeholder="Type Departure City" required="" list="airport01result" autocomplete="off">
+				<datalist id="airport01result">
+					<option>--</option>
+				</datalist>
+			</div>
+			<div class="formElements to">
+				<h3>To</h3>
+				<input id="airport02" type="text" name="city" class="formVal portName city2" placeholder="Type Destination City" required="" list="airport02result" autocomplete="off">
+				<datalist id="airport02result">
+					<option>--</option>
+				</datalist>
+			</div>
+			<div class="clear"></div>
+			<div class="formElements date">
+				<div class="depart">
+					<h3>Depart</h3>
+					<input class="formVal" id="datepicker" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+				</div>
+				<div class="return">
+					<h3>Return</h3>
+					<input class="formVal" id="datepicker1" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="formElements numofppl">
+				<div class="adults">
+					<h3>Passengers</h3>
+					<div class="quantity">
+						<div class="quantity-select">
+							<div class="entry value-minus passChange">&nbsp;</div>
+							<div class="entry value">1</div>
+							<div class="entry value-plus active passChange">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="formElements buttonHolder">
+				<input type="submit" id="submitSearch" value="Search Flights">
+			</div>
+		</div>
+	</div>
+
+	<div id="flightResults">
+		<!-- loader -->
+		<div id="loader">
+			<img src="assets/images/Eclipse.gif" />
+		</div>
+		<!-- loader end -->
+		<div id="sliderHolder">
+			<div id="sliderText">
+				<label for="amount">Price range:</label>
+				<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+			</div>
+			<div id="slider-range"></div>
+		</div>
+		<div id="resultHeader">
+			<div class="resultTitles">Departure</div>
+			<div class="resultTitles">Duration</div>
+			<div class="resultTitles">Arrival</div>
+			<div class="resultTitles">Airlines</div>
+			<div class="resultTitles">Price</div>
+			<div class="buttonDiv">*</div>
+		</div>
+		<div id="allResults">
+			<!-- all results here -->
+		</div>
+	</div>
+
+	<!--scripts-->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="assets/js/autocomplete.js"></script>
+	<script src="assets/js/myjs.js"></script>
+	<!-- script end -->
+
+</body>
+</html>
