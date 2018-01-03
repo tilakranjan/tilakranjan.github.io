@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6{
 
 }
 h1{
-	color:#fff;
+	color:#ffc107;
 	font-size:50px;
 	padding-top:50px;
 	text-align:center;
@@ -419,7 +419,7 @@ ul#myList{
 		margin:40px auto;
 	}
 	h1 {
-		color: #fff;
+		color: #ffc107;
 		font-size: 43px;
 		margin-top:40px;
 	}
@@ -443,7 +443,7 @@ ul#myList{
 }
 @media (max-width:667px){
 	.numofppl {
-		width: 60%;
+		/* width: 60%; */
 	}
 	.roundtrip .date {
 		width: 68%;
@@ -471,7 +471,7 @@ ul#myList{
 		margin: 0 1em 0;
 	}
 	.numofppl {
-		width: 70%;
+		/* width: 70%; */
 	}
 }
 @media (max-width:480px){
@@ -497,7 +497,7 @@ ul#myList{
 		margin-bottom:40px;
 	}
 	.numofppl {
-		width: 80%;
+		/* width: 80%; */
 	}
 	.oneway .depart, .multicity .depart {
 		width: 100%;
@@ -514,7 +514,7 @@ ul#myList{
 		font-size: 15px;
 	}
 	.numofppl {
-		width: 100%;
+		/* width: 100%; */
 	}
 }
 @media (max-width:384px){
