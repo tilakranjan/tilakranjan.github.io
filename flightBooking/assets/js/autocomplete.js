@@ -10,7 +10,10 @@ $(".portName").on("input", function(e) {
 
   $.get(theUrl+val, function(res) {
     var dataList = $("#"+portId+"result");
-    if(res){
+    if(res.error){
+      // nothing
+    }
+    else{
       myRes = res.cities
       dataList.empty();
       if(myRes.length) {
