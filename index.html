@@ -1,98 +1,551 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+<!DOCTYPE HTML>
+<html>
 
-        <title>Tilak</title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Hi! Tilak here</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
 
-        <!-- Bootstrap Core CSS -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-        <!-- Custom CSS -->
-        <style>
-            body {
-                background-image: url(assets/img/back.jpg);
-            }
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-            body,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-                font-weight: 700;
-            }
-            .row{
-                color: white;
-                background: rgba(255, 87, 34, 0.51);
-                border-radius: 5px;
-                font-family: sans-serif;
-                margin-top: calc(50vh - 84px);
-            }
-        </style>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
 
-    </head>
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
-    <body>
+</head>
 
-        <!-- Page Content -->
-        <div class="container">
+<body>
+	<div id="tilakr-page">
+		<div class="container-wrap">
+			<a href="#" class="js-tilakr-nav-toggle tilakr-nav-toggle" data-toggle="collapse" data-target="#navbar"
+				aria-expanded="false" aria-controls="navbar"><i></i></a>
+			<aside id="tilakr-aside" role="complementary" class="border js-fullheight">
+				<div class="text-center">
+					<div class="author-img" style="background-image: url(images/about.jpg);"></div>
+					<h1 id="tilakr-logo"><a href="index.html">Tilak Ranjan</a></h1>
+					<span class="position">
+						<a>Full Stack Developer</a>
+						<br />
+						Bengaluru
+					</span>
+				</div>
+				<nav id="tilakr-main-menu" role="navigation" class="navbar">
+					<div id="navbar" class="collapse">
+						<ul>
+							<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+							<li><a href="#" data-nav-section="about">About</a></li>
+							<li><a href="#" data-nav-section="skills">Skills</a></li>
+							<li><a href="#" data-nav-section="education">Education</a></li>
+							<li><a href="#" data-nav-section="experience">Experience</a></li>
+							<li><a href="#" data-nav-section="contact">Contact</a></li>
+						</ul>
+					</div>
+				</nav>
+				<div class="tilakr-footer">
+					<p>
+						<small>
+							&copy;
+							<script>document.write(new Date().getFullYear());</script>
+							All rights reserved
+						</small>
+					</p>
+					<ul>
+						<li><a href="https://github.com/tilakranjan" target="blank"><i class="icon-github"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/techtilak/" target="blank"><i class="icon-linkedin2"></i></a></li>
+					</ul>
+				</div>
+			</aside>
 
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1>Hello World! I am Tilak</h1>
-                    <p class="lead">Full stack web n hybrid mobile app developer</p>
-                    <hr>
-                    <ul class="list-inline intro-social-buttons">
-                        <li>
-                            <a href="https://twitter.com/techtilak" target="_blank" class="btn btn-default btn-lg">
-                                <i class="fa fa-twitter fa-fw"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/tilakranjan" target="_blank" class="btn btn-default btn-lg">
-                                <i class="fa fa-github fa-fw"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/techtilak/" target="_blank" class="btn btn-default btn-lg">
-                                <i class="fa fa-linkedin fa-fw"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://tilak.etrixtech.com/" target="_blank" class="btn btn-default btn-lg">
-                                <i class="fa fa-desktop fa-fw"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /.row -->
+			<div id="tilakr-main">
+				<section id="tilakr-hero" class="js-fullheight" data-section="home">
+					<div class="flexslider js-fullheight">
+						<ul class="slides">
+							<li style="background-image: url(images/img_bg_1.jpg);">
+								<div class="overlay"></div>
+								<div class="container-fluid">
+									<div class="row">
+										<div
+											class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+											<div class="slider-text-inner js-fullheight">
+												<div class="desc">
+													<h1>Hi! <br>I'm Tilak</h1>
+													<h2>Full Stack Javascript Developer</h2>
+													<p>
+														<a href="./Tilak_R_Mohanta_Resume.pdf" target="blank" class="btn btn-primary btn-learn">
+															Download CV <i class="icon-download4"></i>
+														</a>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li style="background-image: url(images/img_bg_2.jpg);">
+								<div class="overlay"></div>
+								<div class="container-fluid">
+									<div class="row">
+										<div
+											class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+											<div class="slider-text-inner">
+												<div class="desc">
+													<h1>I am a<br>Developer</h1>
+													<h2>
+														I develope Web and Mobile application
+													</h2>
+													<p>
+														<a href="#about" class="btn btn-primary btn-learn">
+															View More
+															<i class="icon-briefcase3"></i>
+														</a>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
 
-        </div>
-        <!-- /.container -->
+				<section id="about" class="tilakr-about" data-section="about">
+					<div class="tilakr-narrow-content">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+									<div class="col-md-12">
+										<div class="about-desc">
+											<span class="heading-meta">About Me</span>
+											<h2 class="tilakr-heading">Who Am I?</h2>
+											<p>
+												<strong>Hi I'm Tilak.</strong> My love for coding and problem solving
+												led me become a developer. Despite having a graduation in Electrical
+												Engineering, I choosed to be a developer. I started learning coding by
+												myself after college. Since then, I have learned most of the
+												technologies by myself. I love to explore different technologies. In a
+												single line, I am a lifelong learner, may be a bit slow, but with a
+												never give up attitude.
+											</p>
+											<p>Apart from developing app, My interests are travelling, pizza, dog.</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+										<div class="services color-2">
+											<span class="icon2"><i class="icon-monitor"></i></span>
+											<h3>Coder</h3>
+										</div>
+									</div>
+									<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+										<div class="services color-4">
+											<span class="icon2"><i class="icon-bulb"></i></span>
+											<h3>Developer</h3>
+										</div>
+									</div>
+									<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+										<div class="services color-3">
+											<span class="icon2"><i class="icon-plane"></i></span>
+											<h3>Traveller</h3>
+										</div>
+									</div>
+									<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+										<div class="services color-4">
+											<span class="icon2"><i class="icon-food"></i></span>
+											<h3>Foodie</h3>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+										<div class="hire">
+											<h2>I am a lifelong learner, may be a bit slow, but with a never give up
+												attitude.</h2>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 
-        <!-- jQuery Version 1.11.1 -->
-        <script src="assets/js/jquery.js"></script>
+				<div id="tilakr-counter" class="tilakr-counters"
+					style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+					<div class="overlay"></div>
+					<div class="tilakr-narrow-content">
+						<div class="row">
+						</div>
+						<div class="row">
+							<div class="col-md-4 text-center animate-box">
+								<span class="tilakr-counter js-counter" data-from="0" data-to="5" data-speed="5000"
+									data-refresh-interval="50"></span>
+								<span class="tilakr-counter-label">years of experience</span>
+							</div>
+							<div class="col-md-4 text-center animate-box">
+								<span class="tilakr-counter js-counter" data-from="0" data-to="19" data-speed="5000"
+									data-refresh-interval="50"></span>
+								<span class="tilakr-counter-label">Projects</span>
+							</div>
+							<div class="col-md-4 text-center animate-box">
+								<span class="tilakr-counter js-counter" data-from="0" data-to="11" data-speed="5000"
+									data-refresh-interval="50"></span>
+								<span class="tilakr-counter-label">Technologies</span>
+							</div>
+						</div>
+					</div>
+				</div>
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="assets/js/bootstrap.min.js"></script>
+				<section class="tilakr-skills" data-section="skills">
+					<div class="tilakr-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">My Specialty</span>
+								<h2 class="tilakr-heading animate-box">My Skills</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<p>Few of my expertise are ... </p>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>ES6</h3>
+									<div class="progress">
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
+											aria-valuemin="0" aria-valuemax="100" style="width:75%">
+											<span>75%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>Node JS</h3>
+									<div class="progress">
+										<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
+											aria-valuemin="0" aria-valuemax="100" style="width:60%">
+											<span>60%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>MongoDB</h3>
+									<div class="progress">
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
+											aria-valuemin="0" aria-valuemax="100" style="width:85%">
+											<span>85%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>React JS</h3>
+									<div class="progress">
+										<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+											aria-valuemin="0" aria-valuemax="100" style="width:90%">
+											<span>90%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>React Native</h3>
+									<div class="progress">
+										<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+											aria-valuemin="0" aria-valuemax="100" style="width:70%">
+											<span>70%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 
-    </body>
+				<section class="tilakr-education" data-section="education">
+					<div class="tilakr-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">Academics</span>
+								<h2 class="tilakr-heading animate-box">Education</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<div class="fancy-collapse-panel">
+									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingTwo">
+												<h4 class="panel-title">
+													<a class="" data-toggle="collapse" data-parent="#accordion"
+														href="#collapseTwo" aria-expanded="true"
+														aria-controls="collapseTwo">Graduation
+													</a>
+												</h4>
+											</div>
+											<div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel"
+												aria-labelledby="headingTwo">
+												<div class="panel-body">
+													<ul>
+														<li>2009 - 2013</li>
+														<li>B.Tech in Electrical Engineering</li>
+														<li>BPUT, Odisha</li>
+														<li>GIET, Gunupur</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingThree">
+												<h4 class="panel-title">
+													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+														href="#collapseThree" aria-expanded="false"
+														aria-controls="collapseThree">+2
+													</a>
+												</h4>
+											</div>
+											<div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+												aria-labelledby="headingThree">
+												<div class="panel-body">
+													<ul>
+														<li>2006 - 2008</li>
+														<li>Science</li>
+														<li>ICSE</li>
+														<li>IEMS, Rourkela</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingFour">
+												<h4 class="panel-title">
+													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+														href="#collapseFour" aria-expanded="false"
+														aria-controls="collapseFour">10th
+													</a>
+												</h4>
+											</div>
+											<div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+												aria-labelledby="headingFour">
+												<div class="panel-body">
+													<ul>
+														<li>2006</li>
+														<li>ICSE</li>
+														<li>IEMS, Rourkela</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="tilakr-experience" data-section="experience">
+					<div class="tilakr-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">Experience</span>
+								<h2 class="tilakr-heading animate-box">Work Experience</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="timeline-centered">
+									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+										<div class="timeline-entry-inner">
+
+											<div class="timeline-icon color-1">
+												<i class="icon-pen2"></i>
+											</div>
+
+											<div class="timeline-label">
+												<h2>
+													<a href="#">Sr. React JS Developer @ Okupied INC</a>
+													<span>Aug 2019 - Present</span>
+												</h2>
+												<p>
+													Planned, developed, tested, deployed and maintained the web portal
+													built in React JS.
+												</p>
+											</div>
+										</div>
+									</article>
+
+
+									<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+										<div class="timeline-entry-inner">
+											<div class="timeline-icon color-2">
+												<i class="icon-pen2"></i>
+											</div>
+											<div class="timeline-label">
+												<h2>
+													<a href="#">Full Stack Developer @ Kyndor INC</a>
+													<span>Dec 2018 - July 2019</span>
+												</h2>
+												<p>
+													Developed, maintained and deployed REST API built in Express JS.
+													Developed UI and integrated API in mobile and web App built in React
+													Native and React JS respectively.
+												</p>
+											</div>
+										</div>
+									</article>
+
+									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+										<div class="timeline-entry-inner">
+											<div class="timeline-icon color-3">
+												<i class="icon-pen2"></i>
+											</div>
+											<div class="timeline-label">
+												<h2>
+													<a href="#">Tech Lead @ Etrix Technologies Pvt Ltd</a>
+													<span>December 2014 - November 2018</span>
+												</h2>
+												<p>
+													Requirement collection to app delivery.
+													Lead a team of 4 developers. Planned and executed multiple projects
+													on Node js, React js, React Native.
+												</p>
+											</div>
+										</div>
+									</article>
+
+									<article class="timeline-entry begin animate-box"
+										data-animate-effect="fadeInBottom">
+										<div class="timeline-entry-inner">
+											<div class="timeline-icon color-none">
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="tilakr-contact" data-section="contact">
+					<div class="tilakr-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">Get in Touch</span>
+								<h2 class="tilakr-heading">Contact</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-5">
+								<div class="tilakr-feature tilakr-feature-sm animate-box"
+									data-animate-effect="fadeInLeft">
+									<div class="tilakr-icon">
+										<i class="icon-globe-outline"></i>
+									</div>
+									<div class="tilakr-text">
+										<p>tilak.r.mohanta@gmail.com</p>
+									</div>
+								</div>
+
+								<div class="tilakr-feature tilakr-feature-sm animate-box"
+									data-animate-effect="fadeInLeft">
+									<div class="tilakr-icon">
+										<i class="icon-map"></i>
+									</div>
+									<div class="tilakr-text">
+										<p>Bengaluru, India, 560068</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-7 col-md-push-1">
+								<div class="row">
+									<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box"
+										data-animate-effect="fadeInRight">
+										<div class="tilakr-feature tilakr-feature-sm animate-box"
+											data-animate-effect="fadeInLeft">
+											<div class="tilakr-icon">
+												<i class="icon-phone"></i>
+											</div>
+											<div class="tilakr-text">
+												<p><a href="tel://">+91 7381 039 044</a></p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div><!-- end:tilakr-main -->
+		</div><!-- end:container-wrap -->
+	</div><!-- end:tilakr-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+</body>
 
 </html>
