@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d47aa802.chunk.css",
+    "main.js": "/static/js/main.ea6d31ff.chunk.js",
+    "main.js.map": "/static/js/main.ea6d31ff.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.48cf244d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.48cf244d.js.map",
+    "static/js/2.d88c9910.chunk.js": "/static/js/2.d88c9910.chunk.js",
+    "static/js/2.d88c9910.chunk.js.map": "/static/js/2.d88c9910.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.03c308ac04ebf5a709dfbc462b1b7fb5.js": "/precache-manifest.03c308ac04ebf5a709dfbc462b1b7fb5.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.d47aa802.chunk.css.map": "/static/css/main.d47aa802.chunk.css.map",
+    "static/js/2.d88c9910.chunk.js.LICENSE": "/static/js/2.d88c9910.chunk.js.LICENSE",
+    "static/media/Airbase_Logo.svg": "/static/media/Airbase_Logo.6caeb41a.svg",
+    "static/media/FontsFree-Net-SFProDisplay-Regular.ttf": "/static/media/FontsFree-Net-SFProDisplay-Regular.d09549c1.ttf",
+    "static/media/check.svg": "/static/media/check.c722dbbc.svg",
+    "static/media/file.svg": "/static/media/file.c95f57b2.svg",
+    "static/media/lock.svg": "/static/media/lock.370e89ba.svg",
+    "static/media/unCheck.svg": "/static/media/unCheck.7aa3516f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.48cf244d.js",
+    "static/js/2.d88c9910.chunk.js",
+    "static/css/main.d47aa802.chunk.css",
+    "static/js/main.ea6d31ff.chunk.js"
+  ]
+}
